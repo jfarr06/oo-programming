@@ -6,15 +6,15 @@
 
 package dev.petko.oop.lab1;
 
-import dev.petko.oop.ProblemWrapper;
+import dev.petko.oop.CallWrapper;
 
 public class Main 
 {
     public static void main(String[] args) 
     {
-        ProblemWrapper.runMain("problem 1", Problem1::main, args);
-        ProblemWrapper.runMain("problem 2", Problem2::main, args);
-        ProblemWrapper.runMain("problem 3", Problem3::main, args);
-        ProblemWrapper.runMain("problem 4", Problem4::main, args);
+        CallWrapper.runMain("problem 1", Problem1::main, args);
+        CallWrapper.runMain("problem 2", Problem2::main, args);
+        CallWrapper.runMain("problem 3", Problem3::main, args);
+        CallWrapper.runMain("problem 4", Problem4::main, args);
     }
 }

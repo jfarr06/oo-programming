@@ -1,15 +1,13 @@
 LAB ?=
 
-.PHONY: build
-
 build:
 
-	@mvn package
+	@mvn --batch-mode --update-snapshots package
 
 run:
 	
 ifeq ($(strip $(LAB)),)
-		$(info "$$LAB should be specified!")
+		@java -cp $(shell pwd)/target/dev.petko.oop-1.0.jar dev.petko.oop.Main
 else
-		java -cp $(shell pwd)/target/dev.petko.oop-1.0.jar dev.petko.oop.lab${LAB}.Main
+		@java -cp $(shell pwd)/target/dev.petko.oop-1.0.jar dev.petko.oop.lab${LAB}.Main
 endif
