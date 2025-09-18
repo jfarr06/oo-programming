@@ -24,14 +24,6 @@ jobs:
     needs: cancel-old-build
     timeout-minutes: 15
 
-    strategy:
-      fail-fast: true
-      
-      matrix:
-        mode:
-          - debug
-          - release
-
     steps:
       - uses: actions/checkout@v4
 
@@ -39,6 +31,8 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '21'
+          distribution: 'temurin'
+          architecture: 'x64'
 
       - name: Build
         run: |
