@@ -1,13 +1,22 @@
-/*
- * @name: Problem2.java
- * @desc: Problem 2
- * @author: James Farrelly (C24402114)
- * */
+/**
+ * @file Problem2.java
+ * @author James Farrelly (C24402114 - TU857-2)
+ */
 
 package dev.petko.oop.lab1;
 
+/**
+ * Lab 1, Problem 2 entrypoint.
+ *
+ * Constructor calls with limited arguments with no toString
+ */
 public class Problem2
 {
+    /**
+     * Main method for app entrypoint
+     *
+     * @param args Arguments from the command line.
+     */
     public static void main(String[] args)
     {
         var customer1 = new Customer("John", "Smith", "Dublin");
