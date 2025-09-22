@@ -39,9 +39,7 @@ public class Customer
      */
     public Customer(String firstName, String surname, String city)
     {
-        this.firstName = firstName;
-        this.surname = surname;
-        this.city = city;
+       this(firstName, surname, city, 0);
     }
 
     /**
