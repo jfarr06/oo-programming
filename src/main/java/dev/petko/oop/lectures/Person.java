@@ -5,15 +5,13 @@
 
 package dev.petko.oop.lectures;
 
-import java.text.Format;
-
 /**
  * Person class.
  */
 public class Person
 {
-    private int _age;
-    private String _name;
+    private int age;
+    private String name;
 
     /**
      * Construct a new instance of {@link Person}
@@ -36,7 +34,7 @@ public class Person
      */
     public int getAge() 
     {
-        return _age;
+        return this.age;
     }
 
     /**
@@ -49,7 +47,7 @@ public class Person
     {
         if (age < 1 || age > 100) throw new IllegalArgumentException("Age must be between 1-100");
 
-        _age = age;
+        this.age = age;
     }
 
     /**
@@ -59,7 +57,7 @@ public class Person
      */
     public String getName() 
     {
-        return _name;
+        return this.name;
     }
 
     /**
@@ -72,7 +70,7 @@ public class Person
     {
         if (name == null || name.isEmpty()) throw new IllegalArgumentException("Name cannot be null or empty!");
 
-        _name = name;
+        this.name = name;
     }
 
     /**
@@ -80,6 +78,6 @@ public class Person
      */
     public String toString()
     {
-        return String.format("[%d] %s", _age, _name);
+        return String.format("[%d] %s", getAge(), getName());
     }
 }

@@ -5,9 +5,6 @@
 
 package dev.petko.oop;
 
-import javax.swing.JTextField;
-import javax.swing.JToolTip;
-
 /**
  * Main entrypoint for ALL labs.
  */
