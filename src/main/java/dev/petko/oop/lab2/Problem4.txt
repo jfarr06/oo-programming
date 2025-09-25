@@ -1,0 +1,11 @@
+1)
+a) javax.desktop, javax.swing
+b) Used to display a "Tip" for a Component. 
+c) 5
+d) JTooltip j = new JTooltip();
+   j.setTipText("sample text");
+
+2)
+
+   String s = "this is the first string";
+   s.length()
