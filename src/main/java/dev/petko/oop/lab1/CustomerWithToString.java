@@ -18,7 +18,7 @@ public class CustomerWithToString {
      * The surname of the customer.
      */
     public String surname;
-    
+
     /**
      * The city of the customer.
      */
@@ -32,13 +32,13 @@ public class CustomerWithToString {
     /**
      * Construct a new instance of {@link CustomerWithToString}
      *
-     * @param firstName The first name of the customer.
-     * @param surname The surname of the customer.
-     * @param city The city of the customer.
+     * @param firstName      The first name of the customer.
+     * @param surname        The surname of the customer.
+     * @param city           The city of the customer.
      * @param customerNumber The customer number of the customer.
      */
-    public CustomerWithToString(String firstName, String surname, String city, int customerNumber)
-    {
+    public CustomerWithToString(String firstName, String surname, String city,
+            int customerNumber) {
         this.firstName = firstName;
         this.surname = surname;
         this.city = city;
@@ -47,15 +47,11 @@ public class CustomerWithToString {
 
     /**
      * {@inheritDoc Object::toString}
-     *
-     * @return {@link String}
      */
-    public String toString()
-    {
-        return "This customer is called " +
-                firstName + " " + surname +
-                ", is from the city of " + city +
-                ", and their customer id is " + customerNumber;
-                
+    @Override
+    public final String toString() {
+        return "This customer is called " + firstName + " " + surname +
+                ", is from the city of " + city + ", and their customer id is " +
+                customerNumber;
     }
 }

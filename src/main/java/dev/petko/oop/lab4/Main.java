@@ -3,12 +3,12 @@
  * @author James Farrelly (C24402114 - TU857-2)
  */
 
-package dev.petko.oop.lab2;
+package dev.petko.oop.lab4;
 
 import dev.petko.oop.CallWrapper;
 
 /**
- * Main entrypoint for Lab2
+ * Main entrypoint for Lab4
  */
 public class Main {
     /**
@@ -18,7 +18,5 @@ public class Main {
      */
     public static void main(String[] args) {
         CallWrapper.runMain("problem 1", Problem1::main, args);
-        CallWrapper.runMain("problem 2", Problem2::main, args);
-        CallWrapper.runMain("problem 3", Problem3::main, args);
     }
 }

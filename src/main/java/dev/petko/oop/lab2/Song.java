@@ -8,8 +8,7 @@ package dev.petko.oop.lab2;
 /**
  * Base song class.
  */
-public class Song 
-{
+public class Song {
     /**
      * The song title
      */
@@ -19,7 +18,7 @@ public class Song
      * The song artist
      */
     public String artist;
-    
+
     /**
      * The song duration in seconds
      */
@@ -28,12 +27,11 @@ public class Song
     /**
      * Construct a new instance of {@link Song}
      *
-     * @param songTitle The title of the song
-     * @param artist The artist of the song
+     * @param songTitle       The title of the song
+     * @param artist          The artist of the song
      * @param durationSeconds The duration of the song in seconds.
      */
-    public Song(String songTitle, String artist, int durationSeconds)
-    {
+    public Song(String songTitle, String artist, int durationSeconds) {
         this.songTitle = songTitle;
         this.artist = artist;
         this.durationSeconds = durationSeconds;
@@ -42,8 +40,10 @@ public class Song
     /**
      * {@inheritDoc Object::toString}
      */
-    public String toString()
-    {
-        return String.format("This song is called %s, performed by %s, and lasts %d seconds.", songTitle, artist, durationSeconds);
+    @Override
+    public String toString() {
+        return String.format(
+                "This song is called %s, performed by %s, and lasts %d seconds.",
+                songTitle, artist, durationSeconds);
     }
 }

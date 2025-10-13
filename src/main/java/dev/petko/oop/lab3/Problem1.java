@@ -3,12 +3,12 @@
  * @author James Farrelly (C24402114 - TU857-2)
  */
 
-package dev.petko.oop.lab2;
+package dev.petko.oop.lab3;
 
 /**
  * Main entrypoint for problem 1.
  *
- * Class with no encapsulation.
+ * Basic mammal class with no inheritance.
  */
 public class Problem1 {
     /**
@@ -17,9 +17,9 @@ public class Problem1 {
      * @param args Arguments from the command line.
      */
     public static void main(String[] args) {
-        var song = new Song("SongName", "That one guy", 25);
+        var mammal = new Mammal("Lion", 0, 0, 4);
 
-        System.out.println(song);
-        System.out.println(song.songTitle);
+        mammal.move(5);
+        mammal.slowDown(5);
     }
 }

@@ -8,17 +8,17 @@ package dev.petko.oop;
 /**
  * Main entrypoint for ALL labs.
  */
-public class Main 
-{
+public class Main {
     /**
      * Main method for app entrypoint
      *
      * @param args Arguments from the command line.
      */
-    public static void main(String[] args) 
-    {
+    public static void main(String[] args) {
         CallWrapper.runMain("lab 1", dev.petko.oop.lab1.Main::main, args);
         CallWrapper.runMain("lab 2", dev.petko.oop.lab2.Main::main, args);
+        CallWrapper.runMain("lab 3", dev.petko.oop.lab3.Main::main, args);
+        CallWrapper.runMain("lab 4", dev.petko.oop.lab4.Main::main, args);
         CallWrapper.runMain("lectures", dev.petko.oop.lectures.Main::main, args);
     }
 }

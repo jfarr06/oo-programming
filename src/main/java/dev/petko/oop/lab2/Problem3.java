@@ -10,17 +10,15 @@ package dev.petko.oop.lab2;
  *
  * Testing methods.
  */
-public class Problem3
-{
+public class Problem3 {
     /**
      * Main method for app entrypoint
      *
      * @param args Arguments from the command line.
      */
-    public static void main(String[] args) 
-    {
+    public static void main(String[] args) {
         var song = new SongEncapsulated("SongName", "That one guy", 25);
-        
+
         song.playSample();
     }
 }

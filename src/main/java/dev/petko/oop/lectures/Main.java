@@ -8,15 +8,13 @@ package dev.petko.oop.lectures;
 /**
  * Main entrypoint for all lecture based testing.
  */
-public class Main
-{
+public class Main {
     /**
      * Main method for app entrypoint
      *
      * @param args Arguments from the command line.
      */
-    public static void main(String[] args) 
-    {
+    public static void main(String[] args) {
         var p1 = new Person(18, "John");
 
         System.out.println(p1);

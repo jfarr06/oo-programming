@@ -3,12 +3,12 @@
  * @author James Farrelly (C24402114 - TU857-2)
  */
 
-package dev.petko.oop.lab1;
+package dev.petko.oop.lab3;
 
 /**
- * Lab 1, Problem 2 entrypoint.
+ * Main entrypoint for problem 2.
  *
- * Constructor calls with limited arguments with no toString
+ * Basic bird class with no inheritance.
  */
 public class Problem2 {
     /**
@@ -17,8 +17,11 @@ public class Problem2 {
      * @param args Arguments from the command line.
      */
     public static void main(String[] args) {
-        var customer1 = new Customer("John", "Smith", "Dublin");
+        var bird = new Bird("Pidgeon", 1, 0, true);
 
-        System.out.println(customer1);
+        bird.move(5);
+        bird.slowDown(5);
+
+        System.out.println(bird);
     }
 }

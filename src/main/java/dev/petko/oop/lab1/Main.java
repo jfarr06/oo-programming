@@ -10,15 +10,13 @@ import dev.petko.oop.CallWrapper;
 /**
  * Main entrypoint for Lab1
  */
-public class Main 
-{
+public class Main {
     /**
      * Main method for app entrypoint
      *
      * @param args Arguments from the command line.
      */
-    public static void main(String[] args) 
-    {
+    public static void main(String[] args) {
         CallWrapper.runMain("problem 1", Problem1::main, args);
         CallWrapper.runMain("problem 2", Problem2::main, args);
         CallWrapper.runMain("problem 3", Problem3::main, args);

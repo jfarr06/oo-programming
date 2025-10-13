@@ -8,21 +8,19 @@ package dev.petko.oop.lectures;
 /**
  * Person class.
  */
-public class Person
-{
+public class Person {
     private int age;
     private String name;
 
     /**
      * Construct a new instance of {@link Person}
      *
-     * @param age The age of the person
+     * @param age  The age of the person
      * @param name The name of the person.
      * @exception IllegalArgumentException Age must be between 1-100
      * @exception IllegalArgumentException Name cannot be null or empty!
      */
-    public Person(int age, String name)
-    {
+    public Person(int age, String name) {
         setAge(age);
         setName(name);
     }
@@ -32,8 +30,7 @@ public class Person
      *
      * @return The age.
      */
-    public int getAge() 
-    {
+    public int getAge() {
         return this.age;
     }
 
@@ -43,9 +40,9 @@ public class Person
      * @param age The new age.
      * @exception IllegalArgumentException Age must be between 1-100
      */
-    public void setAge(int age) 
-    {
-        if (age < 1 || age > 100) throw new IllegalArgumentException("Age must be between 1-100");
+    public void setAge(int age) {
+        if (age < 1 || age > 100)
+            throw new IllegalArgumentException("Age must be between 1-100");
 
         this.age = age;
     }
@@ -55,8 +52,7 @@ public class Person
      *
      * @return The name.
      */
-    public String getName() 
-    {
+    public String getName() {
         return this.name;
     }
 
@@ -66,9 +62,9 @@ public class Person
      * @param age The new name.
      * @exception IllegalArgumentException Name cannot be null or empty!
      */
-    public void setName(String name) 
-    {
-        if (name == null || name.isEmpty()) throw new IllegalArgumentException("Name cannot be null or empty!");
+    public void setName(String name) {
+        if (name == null || name.isEmpty())
+            throw new IllegalArgumentException("Name cannot be null or empty!");
 
         this.name = name;
     }
@@ -76,8 +72,8 @@ public class Person
     /**
      * {@inheritDoc Object::toString}
      */
-    public String toString()
-    {
+    @Override
+    public String toString() {
         return String.format("[%d] %s", getAge(), getName());
     }
 }

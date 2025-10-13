@@ -10,15 +10,13 @@ package dev.petko.oop.lab1;
  *
  * Simple print out for introduction.
  */
-public class Problem1
-{
+public class Problem1 {
     /**
      * Main method for app entrypoint
      *
      * @param args Arguments from the command line.
      */
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         System.out.println("Java is easy!");
     }
 }
