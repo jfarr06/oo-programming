@@ -1,6 +1,10 @@
+doc:
+
+	@mvn javadoc:javadoc
+
 build:
 
-	@mvn --batch-mode --update-snapshots package
+	@mvn clean compile assembly:single
 
 run:
-	@java -cp $(shell pwd)/target/dev.petko.oop.project-1.0.jar dev.petko.oop.project.Main
+	@java -jar $(shell pwd)/target/dev.petko.oop.project-1.0-jar-with-dependencies.jar -d resources/Farrelly_James.csv
