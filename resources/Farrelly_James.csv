@@ -57,3 +57,4 @@ Student_ID,Subject,Assessments,Average_Score,Attendance_%,Grade,Term
 30055,Chemistry,4,46.000000,90.500000,B,T1
 30056,History,7,59.599998,71.900002,B,T1
 30057,History,7,95.300003,76.800003,B,T3
+12345,CS,4,80.000000,50.000000,B,T2
