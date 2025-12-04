@@ -122,7 +122,7 @@ public class Gui extends JFrame {
                 RowFilter<TableModel, Object> rf;
 
                 try {
-                    rf = RowFilter.regexFilter(filterTextField.getText(), DataSetEntry.COLUMN_INDICES); // Search all columns
+                    rf = RowFilter.regexFilter(filterTextField.getText(), DataSetEntry.SEARCHABLE_COLUMN_INDICES); // Search all columns
                 } catch (java.util.regex.PatternSyntaxException ex) {
                     return;
                 }

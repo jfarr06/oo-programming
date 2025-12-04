@@ -11,6 +11,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 
+import javax.swing.event.TableModelEvent;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.table.TableModel;
 
@@ -89,7 +90,7 @@ public final class DataSetManager extends AbstractTableModel {
     public void addEntry(DataSetEntry entry) {
         if (cachedRows.stream().filter(x -> x.getStudentId() == entry.getStudentId()).count() == 0) {
             cachedRows.add(entry);
-            fireTableChanged(null);
+            fireTableChanged(new TableModelEvent(this));
         }
     }
 

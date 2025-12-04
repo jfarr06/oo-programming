@@ -70,6 +70,13 @@ public final class DataSetEntry {
         TERM
     };
 
+    public static final int[] SEARCHABLE_COLUMN_INDICES = {
+        STUDENT_ID,
+        SUBJECT,
+        GRADE,
+        TERM
+    };
+
     /**
      * Array of all the individual column names.
      */
